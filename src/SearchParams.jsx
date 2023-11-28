@@ -48,8 +48,8 @@ const SearchParams = () => {
             disabled={!breeds.length}
             id="breed"
             value={breed}
-            onChange={(e) => setBreed(e.target.value)}
-            onBlur={(e) => setBreed(e.target.value)}
+            onChange={(e) => updateBreed(e.target.value)}
+            onBlur={(e) => updateBreed(e.target.value)}
           >
             <option />
             {breeds.map((breed) => (
